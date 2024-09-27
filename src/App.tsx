@@ -18,6 +18,9 @@ import DonationAdmin from './pages/Donationadmin';
 import Adddonation from './pages/Adddonation';
 import Donationuser from './pages/Donationuser';
 import Profile from './pages/Profile';
+import Login from './pages/Login';
+
+
 
 function App() {
   return (
@@ -43,6 +46,7 @@ function App() {
         <Route path="/Adddonation" element={<Adddonation />} />
         <Route path="/Donationuser" element={<Donationuser />} />
         <Route path="/Profile" element={<Profile />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </Router>
   );
