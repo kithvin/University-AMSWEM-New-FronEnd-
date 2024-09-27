@@ -19,7 +19,7 @@ import Adddonation from './pages/Adddonation';
 import Donationuser from './pages/Donationuser';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
-
+import Register from './pages/Register';
 
 
 function App() {
@@ -47,6 +47,7 @@ function App() {
         <Route path="/Donationuser" element={<Donationuser />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
       </Routes>
     </Router>
   );
