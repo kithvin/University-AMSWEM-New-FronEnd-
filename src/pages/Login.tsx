@@ -66,7 +66,7 @@ const Login = () => {
               <input
                 type="password" // Input type for password
                 required // This field is required
-                className="w-full h-auto pl-10 pr-3 min-h-[50px] text-lg border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 transition duration-200"
+                className="w-full h-auto pl-10 pr-4 min-h-[50px] text-lg border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 transition duration-200"
                 placeholder="Password" // Placeholder text for password input
               />
             </div>
@@ -89,7 +89,7 @@ const Login = () => {
             {/* Login Button */}
             <button
               type="submit" 
-              className="mt-4 btn btn-block btn-primary bg-indigo-600 text-white font-semibold py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              className="mt-4 btn btn-block btn-primary bg-indigo-600 text-white font-semibold py-3 rounded-md shadow-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
               Login 
             </button>
