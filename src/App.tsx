@@ -11,15 +11,22 @@ import UpcomingProgramme from './pages/UpcomingProgramme';
 import Userevent from './pages/Userevent';
 import Adminevent from './pages/Adminevent';
 import Addevent from './pages/Addevent';
+import Jobadmin from './pages/Jobadmin';
+import Addjob from './pages/Addjob';
+import JobUser from './pages/JobUser';
+import DonationAdmin from './pages/Donationadmin';
+import Adddonation from './pages/Adddonation';
+import Donationuser from './pages/Donationuser';
+import Profile from './pages/Profile';
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Define routes here */}
         <Route path="/" element={<HomePage />} />
         <Route path="/VolunteerOPadmin" element={<VolunteerOPadmin />} />
         <Route path="/created-volunteer-opportunities" element={<CreatedVO />} />
+        {/* Consider removing this if duplicate path is not necessary */}
         <Route path="/createdvo" element={<CreatedVO />} />
         <Route path="/volunteeropuser" element={<VolunteerOPuser />} />
         <Route path="/AdminNews" element={<AdminNews />} />
@@ -27,8 +34,15 @@ function App() {
         <Route path="/AlumniReport" element={<AlumniReport />} />
         <Route path="/UpcomingProgramme" element={<UpcomingProgramme />} />
         <Route path="/Userevent" element={<Userevent />} />
-        <Route path="/Adminevent" element={<Adminevent />} /> 
-        <Route path="/Addevent" element={<Addevent />} /> 
+        <Route path="/Adminevent" element={<Adminevent />} />
+        <Route path="/Addevent" element={<Addevent />} />
+        <Route path="/Jobadmin" element={<Jobadmin />} />
+        <Route path="/Addjob" element={<Addjob />} />
+        <Route path="/JobUser" element={<JobUser />} />
+        <Route path="/DonationAdmin" element={<DonationAdmin />} />
+        <Route path="/Adddonation" element={<Adddonation />} />
+        <Route path="/Donationuser" element={<Donationuser />} />
+        <Route path="/Profile" element={<Profile />} />
       </Routes>
     </Router>
   );

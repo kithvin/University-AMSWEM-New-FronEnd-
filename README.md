@@ -4,4 +4,7 @@
 
 * npm install react-icons = installed the react icon
 
+* npm install react-responsive-modal = installed the react-responsive-modal to the project
+
+
 
