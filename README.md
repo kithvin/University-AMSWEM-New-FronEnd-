@@ -2,5 +2,6 @@
 
 * npm install @types/react-router-dom = Install TypeScript types for react-router-dom: Since using TypeScript, this will also need to install the TypeScript type definitions for react-router-dom.
 
-* 
+* npm install react-icons = installed the react icon
+
 
