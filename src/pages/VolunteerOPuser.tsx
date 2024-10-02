@@ -1,6 +1,7 @@
 import { FaHandsHelping } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 
 type Volunteer = {
   id: number;
@@ -15,6 +16,7 @@ type Volunteer = {
 
 const VolunteerOPuser = () => {
   const [volunteers, setVolunteers] = useState<Volunteer[]>([]);
+  const navigate = useNavigate(); // Initialize navigate
 
   useEffect(() => {
     loadVolunteers();
@@ -28,6 +30,10 @@ const VolunteerOPuser = () => {
     } catch (error) {
       console.error("Error loading volunteer opportunities:", error);
     }
+  };
+
+  const handleBackHome = () => {
+    navigate("/"); // Navigate back to home page
   };
 
   return (
@@ -80,8 +86,21 @@ const VolunteerOPuser = () => {
           )}
         </div>
       </div>
+
+      {/* Back to Home Page Button */}
+      <div className="flex justify-center mt-10">
+        <button 
+          onClick={handleBackHome} 
+          className="bg-gray-500 text-white font-bold py-2 px-4 rounded hover:bg-gray-600 transition duration-300"
+        >
+          Back to Home Page
+        </button>
+      </div>
     </div>
   );
 };
 
 export default VolunteerOPuser;
+
+
+
