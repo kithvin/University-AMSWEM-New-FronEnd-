@@ -225,7 +225,7 @@ const HomePage: React.FC = () => {
               Empowering every alumni to collaborate together.
             </p>
             <div className="flex justify-center space-x-4">
-              {/* <Link
+              <Link
                 to="/login"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
               >
@@ -236,7 +236,7 @@ const HomePage: React.FC = () => {
                 className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300"
               >
                 Register
-              </Link> */}
+              </Link>
             </div>
           </div>
         </section>
