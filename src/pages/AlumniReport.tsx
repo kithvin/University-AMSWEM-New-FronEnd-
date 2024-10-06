@@ -161,11 +161,13 @@ const AlumniReport: React.FC<NavBarProps> = () => {
                   onChange={handleReportTypeChange} // Handle report type change
                 >
                   <option value="">Select Report Type</option>
+                  <option value="">User Details</option>
                   <option value="Event">Event Details</option>
                   <option value="Donation">Donation Details</option>
                   <option value="Job">Job Details</option>
                   <option value="News">Alumni News Details</option>
                   <option value="VolunteerOP">Volunteer Opportunities</option>
+                  
                   {/* Add more report types as needed */}
                 </select>
               </div>
